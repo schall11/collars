@@ -478,7 +478,7 @@ function(declare, lang, array, locale, esriLang, ItemFileWriteStore, jimuUtils) 
               whereClause = part.fieldObj.name + " IN ('" +
              prefix + value + "')";
             }
-
+console.log("I changed this");
           }
           break;
         case this.OPERATORS.stringOperatorIsNot:
