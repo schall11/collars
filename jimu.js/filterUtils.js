@@ -457,7 +457,6 @@ function(declare, lang, array, locale, esriLang, ItemFileWriteStore, jimuUtils) 
         case this.OPERATORS.stringOperatorIs:
           if (part.valueObj.type === 'field') {
             whereClause = part.fieldObj.name + " = " + value;
-            console.log("go1");
             //   whereClause = part.fieldObj.name + " IN [" + value + "]";
           } else {
             var multi;
@@ -479,7 +478,6 @@ function(declare, lang, array, locale, esriLang, ItemFileWriteStore, jimuUtils) 
               whereClause = part.fieldObj.name + " IN ('" +
              prefix + value + "')";
             }
-            console.log("value", value);
 
           }
           break;
