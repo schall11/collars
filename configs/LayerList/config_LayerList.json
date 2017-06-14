@@ -1,0 +1,40 @@
+{
+  "showLegend": true,
+  "contextMenu": {
+    "ZoomTo": true,
+    "Transparency": true,
+    "EnableOrDisablePopup": true,
+    "MoveupOrMovedown": true,
+    "OpenAttributeTable": true,
+    "DescriptionOrShowItemDetailsOrDownload": true
+  },
+  "layerOptions": {
+    "Collars_All_ActiveNull_2190": {
+      "display": true
+    },
+    "DWR_WMUs_3609": {
+      "display": true
+    },
+    "UtahCountyBoundaries_204": {
+      "display": true
+    },
+    "WRI_Treatment_Areas_6691": {
+      "display": true
+    },
+    "WRI_Treatment_Areas_6691_0": {
+      "display": true
+    },
+    "WRI_Treatment_Areas_6691_1": {
+      "display": true
+    },
+    "WRI_Treatment_Areas_6691_2": {
+      "display": true
+    },
+    "WRI_Treatment_Areas_6691_3": {
+      "display": true
+    },
+    "WebTiled_3732": {
+      "display": true
+    }
+  }
+}

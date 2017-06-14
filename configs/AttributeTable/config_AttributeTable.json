@@ -1,0 +1,494 @@
+{
+  "layerInfos": [
+    {
+      "name": "Collars - Past Week",
+      "id": "CollarsPastWeek_3380",
+      "layer": {
+        "url": "https://utility.arcgis.com/usrsvcs/servers/9c1f3342546c447dab273225b12c31f8/rest/services/Collars/CollarsPastWeek/MapServer/0",
+        "fields": [
+          {
+            "name": "OBJECTID",
+            "alias": "OBJECTID",
+            "show": false
+          },
+          {
+            "name": "COLLARSERIALNUM",
+            "alias": "Collar ID",
+            "show": true
+          },
+          {
+            "name": "DateYearAndJulian",
+            "alias": "Date",
+            "show": true,
+            "format": {
+              "dateFormat": "shortDateShortTime"
+            }
+          },
+          {
+            "name": "Mortality",
+            "alias": "Mortality",
+            "show": true
+          },
+          {
+            "name": "UniqueID",
+            "alias": "Unique ID",
+            "show": true
+          },
+          {
+            "name": "Species",
+            "alias": "Species",
+            "show": true
+          },
+          {
+            "name": "Freq",
+            "alias": "Frequency",
+            "show": true,
+            "format": {
+              "places": 3,
+              "digitSeparator": false
+            }
+          },
+          {
+            "name": "X_capture",
+            "alias": "X_capture",
+            "show": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "Y_capture",
+            "alias": "Y_capture",
+            "show": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "Cohort",
+            "alias": "Cohort",
+            "show": true
+          },
+          {
+            "name": "Sex",
+            "alias": "Sex",
+            "show": true
+          },
+          {
+            "name": "Age",
+            "alias": "Age",
+            "show": true
+          },
+          {
+            "name": "CaptureLoc",
+            "alias": "Capture Location",
+            "show": true
+          },
+          {
+            "name": "CaptureAre",
+            "alias": "Capture Area",
+            "show": false
+          },
+          {
+            "name": "ReleaseLoc",
+            "alias": "Release Location",
+            "show": true
+          },
+          {
+            "name": "Begin_Date",
+            "alias": "Begin Date",
+            "show": true,
+            "format": {
+              "dateFormat": "shortDate"
+            }
+          },
+          {
+            "name": "End_Date",
+            "alias": "End Date",
+            "show": true,
+            "format": {
+              "dateFormat": "shortDate"
+            }
+          },
+          {
+            "name": "Status",
+            "alias": "Status",
+            "show": true
+          },
+          {
+            "name": "SHAPE",
+            "alias": "SHAPE",
+            "show": false
+          }
+        ]
+      },
+      "show": false,
+      "showAttachments": false
+    },
+    {
+      "name": "All Active Collars",
+      "id": "Collars_All_ActiveNull_9973",
+      "layer": {
+        "url": "https://utility.arcgis.com/usrsvcs/servers/ab894e9dda934400962978dec596ac01/rest/services/Collars/Collars_All_ActiveNull/MapServer/0",
+        "fields": [
+          {
+            "name": "OBJECTID",
+            "alias": "OBJECTID",
+            "show": false
+          },
+          {
+            "name": "COLLARSERIALNUM",
+            "alias": "Collar ID",
+            "show": true
+          },
+          {
+            "name": "DateYearAndJulian",
+            "alias": "Date",
+            "show": true,
+            "format": {
+              "dateFormat": "shortDateShortTime"
+            }
+          },
+          {
+            "name": "Mortality",
+            "alias": "Mortality",
+            "show": true
+          },
+          {
+            "name": "UniqueID",
+            "alias": "Unique ID",
+            "show": true
+          },
+          {
+            "name": "Species",
+            "alias": "Species",
+            "show": true
+          },
+          {
+            "name": "Freq",
+            "alias": "Frequency",
+            "show": true,
+            "format": {
+              "places": 3,
+              "digitSeparator": false
+            }
+          },
+          {
+            "name": "X_capture",
+            "alias": "X_capture",
+            "show": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "Y_capture",
+            "alias": "Y_capture",
+            "show": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "Cohort",
+            "alias": "Cohort",
+            "show": true
+          },
+          {
+            "name": "Sex",
+            "alias": "Sex",
+            "show": true
+          },
+          {
+            "name": "Age",
+            "alias": "Age",
+            "show": true
+          },
+          {
+            "name": "CaptureLoc",
+            "alias": "Capture Location",
+            "show": true
+          },
+          {
+            "name": "CaptureAre",
+            "alias": "Capture Area",
+            "show": false
+          },
+          {
+            "name": "ReleaseLoc",
+            "alias": "Release Location",
+            "show": true
+          },
+          {
+            "name": "Begin_Date",
+            "alias": "Begin Date",
+            "show": true,
+            "format": {
+              "dateFormat": "shortDate"
+            }
+          },
+          {
+            "name": "End_Date",
+            "alias": "End Date",
+            "show": true,
+            "format": {
+              "dateFormat": "shortDate"
+            }
+          },
+          {
+            "name": "Status",
+            "alias": "Status",
+            "show": true
+          },
+          {
+            "name": "SHAPE",
+            "alias": "SHAPE",
+            "show": false
+          }
+        ]
+      },
+      "show": false,
+      "showAttachments": false
+    },
+    {
+      "name": "DWR_WMUs",
+      "id": "DWR_WMUs_3609",
+      "layer": {
+        "url": "http://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/DWR_WMUs/FeatureServer/0",
+        "fields": [
+          {
+            "name": "OBJECTID_1",
+            "alias": "OBJECTID_1",
+            "show": true
+          },
+          {
+            "name": "OBJECTID",
+            "alias": "OBJECTID",
+            "show": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "UName",
+            "alias": "UName",
+            "show": false
+          },
+          {
+            "name": "UNum",
+            "alias": "UNum",
+            "show": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "SUName",
+            "alias": "SUName",
+            "show": false
+          },
+          {
+            "name": "SUNum",
+            "alias": "SUNum",
+            "show": false
+          },
+          {
+            "name": "Acres",
+            "alias": "Acres",
+            "show": false,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "Hectares",
+            "alias": "Hectares",
+            "show": false,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "ID",
+            "alias": "ID",
+            "show": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "Shape__Area",
+            "alias": "Shape__Area",
+            "show": false,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "Shape__Length",
+            "alias": "Shape__Length",
+            "show": false,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          }
+        ]
+      },
+      "show": false,
+      "showAttachments": false
+    },
+    {
+      "name": "County Boundaries",
+      "id": "UtahCountyBoundaries_204",
+      "layer": {
+        "url": "http://services1.arcgis.com/99lidPhWCzftIe9K/arcgis/rest/services/UtahCountyBoundaries/FeatureServer/0",
+        "fields": [
+          {
+            "name": "OBJECTID",
+            "alias": "OBJECTID",
+            "show": true
+          },
+          {
+            "name": "COUNTYNBR",
+            "alias": "COUNTYNBR",
+            "show": false
+          },
+          {
+            "name": "ENTITYNBR",
+            "alias": "ENTITYNBR",
+            "show": false,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "ENTITYYR",
+            "alias": "ENTITYYR",
+            "show": false,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "NAME",
+            "alias": "NAME",
+            "show": false
+          },
+          {
+            "name": "FIPS",
+            "alias": "FIPS",
+            "show": false,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "STATEPLANE",
+            "alias": "STATEPLANE",
+            "show": false
+          },
+          {
+            "name": "POP_LASTCENSUS",
+            "alias": "POP_LASTCENSUS",
+            "show": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "POP_CURRESTIMATE",
+            "alias": "POP_CURRESTIMATE",
+            "show": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "GlobalID",
+            "alias": "GlobalID",
+            "show": false
+          },
+          {
+            "name": "FIPS_STR",
+            "alias": "FIPS_STR",
+            "show": false
+          },
+          {
+            "name": "COLOR4",
+            "alias": "COLOR4",
+            "show": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          }
+        ]
+      },
+      "show": false,
+      "showAttachments": false
+    },
+    {
+      "name": "Proposed",
+      "id": "WRI_Treatment_Areas_6691_0",
+      "layer": {
+        "url": "https://dwrmapserv.utah.gov/arcgis/rest/services/WRI/WRI_Treatment_Areas/MapServer/0"
+      },
+      "show": false,
+      "showAttachments": false
+    },
+    {
+      "name": "Current",
+      "id": "WRI_Treatment_Areas_6691_1",
+      "layer": {
+        "url": "https://dwrmapserv.utah.gov/arcgis/rest/services/WRI/WRI_Treatment_Areas/MapServer/1"
+      },
+      "show": false,
+      "showAttachments": false
+    },
+    {
+      "name": "Completed",
+      "id": "WRI_Treatment_Areas_6691_2",
+      "layer": {
+        "url": "https://dwrmapserv.utah.gov/arcgis/rest/services/WRI/WRI_Treatment_Areas/MapServer/2"
+      },
+      "show": false,
+      "showAttachments": false
+    },
+    {
+      "name": "Pending Completed",
+      "id": "WRI_Treatment_Areas_6691_3",
+      "layer": {
+        "url": "https://dwrmapserv.utah.gov/arcgis/rest/services/WRI/WRI_Treatment_Areas/MapServer/3"
+      },
+      "show": false,
+      "showAttachments": false
+    }
+  ],
+  "table": {
+    "pageSizeOptions": [
+      25,
+      50,
+      100,
+      1000
+    ]
+  },
+  "hideExportButton": false,
+  "initiallyExpand": false,
+  "filterByMapExtent": false
+}

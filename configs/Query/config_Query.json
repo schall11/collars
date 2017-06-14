@@ -1,0 +1,350 @@
+{
+  "hideLayersAfterWidgetClosed": false,
+  "labelTasks": "Query Builder",
+  "labelResults": "",
+  "queries": [
+    {
+      "url": "https://utility.arcgis.com/usrsvcs/servers/ab894e9dda934400962978dec596ac01/rest/services/Collars/Collars_All_ActiveNull/MapServer/0",
+      "name": "Query Collar Data",
+      "icon": "",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "logicalOperator": "AND",
+            "parts": [
+              {
+                "fieldObj": {
+                  "name": "Species",
+                  "label": "Species",
+                  "shortType": "string",
+                  "type": "esriFieldTypeString"
+                },
+                "operator": "stringOperatorIs",
+                "valueObj": {
+                  "isValid": true,
+                  "type": "unique",
+                  "value": ""
+                },
+                "interactiveObj": {
+                  "prompt": "Species is",
+                  "hint": "",
+                  "cascade": "none"
+                },
+                "caseSensitive": false
+              },
+              {
+                "fieldObj": {
+                  "name": "COLLARSERIALNUM",
+                  "label": "COLLARSERIALNUM",
+                  "shortType": "string",
+                  "type": "esriFieldTypeString"
+                },
+                "operator": "stringOperatorIs",
+                "valueObj": {
+                  "isValid": true,
+                  "type": "value",
+                  "value": ""
+                },
+                "interactiveObj": {
+                  "prompt": "Collar number is",
+                  "hint": "",
+                  "cascade": "none"
+                },
+                "caseSensitive": false
+              },
+              {
+                "fieldObj": {
+                  "name": "CaptureLoc",
+                  "label": "CaptureLoc",
+                  "shortType": "string",
+                  "type": "esriFieldTypeString"
+                },
+                "operator": "stringOperatorIs",
+                "valueObj": {
+                  "isValid": true,
+                  "type": "unique",
+                  "value": ""
+                },
+                "interactiveObj": {
+                  "prompt": "Capture location is",
+                  "hint": "",
+                  "cascade": "none"
+                },
+                "caseSensitive": false
+              },
+              {
+                "fieldObj": {
+                  "name": "Sex",
+                  "label": "Sex",
+                  "shortType": "string",
+                  "type": "esriFieldTypeString"
+                },
+                "operator": "stringOperatorIs",
+                "valueObj": {
+                  "isValid": true,
+                  "type": "unique",
+                  "value": ""
+                },
+                "interactiveObj": {
+                  "prompt": "Sex is",
+                  "hint": "",
+                  "cascade": "none"
+                },
+                "caseSensitive": false
+              },
+              {
+                "fieldObj": {
+                  "name": "DateYearAndJulian",
+                  "label": "DateYearAndJulian",
+                  "shortType": "date",
+                  "type": "esriFieldTypeDate"
+                },
+                "operator": "dateOperatorIsBetween",
+                "valueObj": {
+                  "isValid": true,
+                  "type": "value",
+                  "value1": "Thu Jun 08 2017",
+                  "value2": "Thu Jun 08 2017"
+                },
+                "interactiveObj": {
+                  "prompt": "Date is between",
+                  "hint": "",
+                  "cascade": "none"
+                },
+                "caseSensitive": false
+              }
+            ]
+          }
+        ],
+        "expr": ""
+      },
+      "showSQL": false,
+      "spatialFilter": {
+        "currentMapExtent": {
+          "default": true
+        },
+        "drawing": {
+          "default": false,
+          "geometryTypes": [
+            "EXTENT",
+            "CIRCLE",
+            "POLYGON"
+          ],
+          "buffer": null
+        },
+        "useFeatures": {
+          "default": false,
+          "relationships": [
+            {
+              "relationship": "SPATIAL_REL_INTERSECTS",
+              "label": "intersect"
+            }
+          ],
+          "buffer": null
+        },
+        "fullLayerExtent": {
+          "default": false
+        }
+      },
+      "popupInfo": {
+        "title": "{COLLARSERIALNUM} - {Species}",
+        "fieldInfos": [
+          {
+            "fieldName": "OBJECTID",
+            "label": "OBJECTID",
+            "tooltip": "",
+            "visible": false,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "COLLARSERIALNUM",
+            "label": "COLLARSERIALNUM",
+            "tooltip": "",
+            "visible": true,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "DateYearAndJulian",
+            "label": "DateYearAndJulian",
+            "tooltip": "",
+            "visible": true,
+            "format": {
+              "dateFormat": "shortDateShortTime"
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Mortality",
+            "label": "Mortality",
+            "tooltip": "",
+            "visible": true,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "UniqueID",
+            "label": "UniqueID",
+            "tooltip": "",
+            "visible": true,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Species",
+            "label": "Species",
+            "tooltip": "",
+            "visible": true,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Freq",
+            "label": "Freq",
+            "tooltip": "",
+            "visible": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "X_capture",
+            "label": "X_capture",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Y_capture",
+            "label": "Y_capture",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Cohort",
+            "label": "Cohort",
+            "tooltip": "",
+            "visible": true,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Sex",
+            "label": "Sex",
+            "tooltip": "",
+            "visible": true,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Age",
+            "label": "Age",
+            "tooltip": "",
+            "visible": true,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "CaptureLoc",
+            "label": "CaptureLoc",
+            "tooltip": "",
+            "visible": true,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "CaptureAre",
+            "label": "CaptureAre",
+            "tooltip": "",
+            "visible": true,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "ReleaseLoc",
+            "label": "ReleaseLoc",
+            "tooltip": "",
+            "visible": false,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Begin_Date",
+            "label": "Begin_Date",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "dateFormat": "longMonthDayYear"
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "End_Date",
+            "label": "End_Date",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "dateFormat": "longMonthDayYear"
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Status",
+            "label": "Status",
+            "tooltip": "",
+            "visible": false,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Latitude",
+            "label": "Latitude",
+            "tooltip": "",
+            "visible": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Longitude",
+            "label": "Longitude",
+            "tooltip": "",
+            "visible": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          }
+        ],
+        "description": null,
+        "showAttachments": false,
+        "mediaInfos": [],
+        "readFromWebMap": false
+      },
+      "orderByFields": [],
+      "useLayerSymbol": true,
+      "resultsSymbol": null,
+      "canModifySymbol": false,
+      "keepResultsOnMapAfterCloseWidget": true,
+      "enableExport": true,
+      "singleResultLayer": false,
+      "webMapLayerId": "Collars_All_ActiveNull_9973"
+    }
+  ]
+}
